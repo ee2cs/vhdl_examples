@@ -45,23 +45,24 @@ architecture rtl of tb_yyyymmdd is
 begin
   I0: entity work.yyyymmdd
   port map(
-  ssi_in(7) => i_y3,
-  ssi_in(6) => i_y2,
-  ssi_in(5) => i_y1,
-  ssi_in(4) => i_y0,
-  ssi_in(3) => i_m1,
-  ssi_in(2) => i_m0,
-  ssi_in(1) => i_d1,
-  ssi_in(0) => i_d0,
+            i_y3 => i_y3,
+            i_y2 => i_y2,
+            i_y1 => i_y1,
+            i_y0 => i_y0,
+            i_m1 => i_m1,
+            i_m0 => i_m0,
+            i_d1 => i_d1,
+            i_d0 => i_d0,
 
-  ssi_out(7) => o_y3,
-  ssi_out(6) => o_y2,
-  ssi_out(5) => o_y1,
-  ssi_out(4) => o_y0,
-  ssi_out(3) => o_m1,
-  ssi_out(2) => o_m0,
-  ssi_out(1) => o_d1,
-  ssi_out(0) => o_d0);
+            o_y3 => o_y3,
+            o_y2 => o_y2,
+            o_y1 => o_y1,
+            o_y0 => o_y0,
+            o_m1 => o_m1,
+            o_m0 => o_m0,
+            o_d1 => o_d1,
+            o_d0 => o_d0
+          );
 
   i_y3 <= std_logic_vector(to_unsigned(1, 4)); -- Y
   i_y2 <= std_logic_vector(to_unsigned(9, 4)); -- Y
