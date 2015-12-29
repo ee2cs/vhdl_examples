@@ -23,24 +23,23 @@ entity tb_yyyymmdd is
   end tb_yyyymmdd;
 
 architecture rtl of tb_yyyymmdd is
-  signal i_y3: in std_logic_vector(4 - 1 downto 0);
-  signal i_y2: in std_logic_vector(4 - 1 downto 0);
-  signal i_y1: in std_logic_vector(4 - 1 downto 0);
-  signal i_y0: in std_logic_vector(4 - 1 downto 0);
-  signal i_m1: in std_logic_vector(4 - 1 downto 0);
-  signal i_m0: in std_logic_vector(4 - 1 downto 0);
-  signal i_d1: in std_logic_vector(4 - 1 downto 0);
-  signal i_d0: in std_logic_vector(4 - 1 downto 0);
+  signal i_y3: std_logic_vector(4 - 1 downto 0);
+  signal i_y2: std_logic_vector(4 - 1 downto 0);
+  signal i_y1: std_logic_vector(4 - 1 downto 0);
+  signal i_y0: std_logic_vector(4 - 1 downto 0);
+  signal i_m1: std_logic_vector(4 - 1 downto 0);
+  signal i_m0: std_logic_vector(4 - 1 downto 0);
+  signal i_d1: std_logic_vector(4 - 1 downto 0);
+  signal i_d0: std_logic_vector(4 - 1 downto 0);
 
-  signal o_y3: out std_logic_vector(7 - 1 downto 0);
-  signal o_y2: out std_logic_vector(7 - 1 downto 0);
-  signal o_y1: out std_logic_vector(7 - 1 downto 0);
-  signal o_y0: out std_logic_vector(7 - 1 downto 0);
-  signal o_m1: out std_logic_vector(7 - 1 downto 0);
-  signal o_m0: out std_logic_vector(7 - 1 downto 0);
-  signal o_d1: out std_logic_vector(7 - 1 downto 0);
-  signal o_d0: out std_logic_vector(7 - 1 downto 0)
-
+  signal o_y3: std_logic_vector(7 - 1 downto 0);
+  signal o_y2: std_logic_vector(7 - 1 downto 0);
+  signal o_y1: std_logic_vector(7 - 1 downto 0);
+  signal o_y0: std_logic_vector(7 - 1 downto 0);
+  signal o_m1: std_logic_vector(7 - 1 downto 0);
+  signal o_m0: std_logic_vector(7 - 1 downto 0);
+  signal o_d1: std_logic_vector(7 - 1 downto 0);
+  signal o_d0: std_logic_vector(7 - 1 downto 0);
 
 begin
   I0: entity work.yyyymmdd
