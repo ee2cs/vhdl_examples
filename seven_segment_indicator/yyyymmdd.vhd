@@ -15,14 +15,11 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
 
 library work;
 use work.all;
-use work.ssi_display_pkg.all;
 
 entity yyyymmdd is
-  generic(length: integer := 8);
   port(
         i_y3: in std_logic_vector(4 - 1 downto 0);
         i_y2: in std_logic_vector(4 - 1 downto 0);
@@ -47,7 +44,7 @@ end yyyymmdd;
 architecture rtl of yyyymmdd is
 begin
   I0: entity work.ssi_display
-  generic map(length => length)
+  generic map(length => 8)
   port map(
   ssi_in(7) => i_y3,
   ssi_in(6) => i_y2,
